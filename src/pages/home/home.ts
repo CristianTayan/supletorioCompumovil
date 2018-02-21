@@ -10,5 +10,11 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  goToPrincipal(){
+    this.navCtrl.push('PersonaPage')
+  }
+  goToMascotas(){
+    this.navCtrl.push('MascotaPage')
+  }
 
 }

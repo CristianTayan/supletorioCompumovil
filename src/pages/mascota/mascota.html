@@ -1,0 +1,26 @@
+<!--
+  Generated template for the CuentaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title>Mascota</ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="crearMascota()"><ion-icon name="add"></ion-icon></button>   
+        </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-list>
+      <button ion-item *ngFor="let mascota of mascotas" (click)="registroMascota(mascota.id)">
+        {{mascota.nombre}} - {{mascota.tipo}} - {{mascota.persona}}
+      </button>
+    </ion-list>
+  </ion-content>
+  
